@@ -3,7 +3,7 @@ import Capacitor
 
 @objc(PreferencesPlugin)
 public class PreferencesPlugin: CAPPlugin {
-    private var preferences = Preferences(with: PreferencesConfiguration())
+    public var preferences = Preferences(with: PreferencesConfiguration())
 
     @objc func configure(_ call: CAPPluginCall) {
         let group = call.getString("group")
